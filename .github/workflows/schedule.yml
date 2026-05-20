@@ -1,29 +1,11 @@
-name: Otomatik Script
+name: Test
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '00 12 * * 3'
+    - cron: '*/5 * * * *'
 
 jobs:
-  run:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Python Kur
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      
-      - name: Bağımlılıkları Yükle
-        run: pip install -r requirements.txt
-      
-      - name: Google Credentials Kaydet
-        run: |
-          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > client_secret_768441407763-qkcud789dmtjbf6g8ud48o47v03he2du.apps.googleusercontent.com.json
-          echo '${{ secrets.GOOGLE_TOKEN }}' > token.json
-      
-      - name: Script Çalıştır
-        run: python otomatik_veri_cekici.py
-
+      - run: echo "Çalışıyor!"
