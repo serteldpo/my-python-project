@@ -1,0 +1,45 @@
+{
+    "website": {
+        "url": "https://ekosepeti.net/",
+        "firma_no": "1500",
+        "username": "Dev_Epd",
+        "password": "1q2w3e4r"
+    },
+    "paths": {
+        "base_folder": "C:\\Users\\Murat\\Desktop\\ekosepeti veriler",
+        "temp_download": "C:\\Users\\Murat\\Desktop\\ekosepeti veriler\\_temp_download"
+    },
+    "google_drive": {
+        "enabled": true,
+        "folder_id": "1n99jk81E0pO9AGJ5mkTZw8e9mjx4kBtX",
+        "credentials_file": "client_secret_768441407763-qkcud789dmtjbf6g8ud48o47v03he2du.apps.googleusercontent.com.json",
+        "token_file": "token.json"
+    },
+    "categories": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        25,
+        30,
+        34,
+        35,
+        99
+    ],
+    "schedule": {
+        "enabled": true,
+        "days": [
+            "Çarşamba"
+        ],
+        "time": "10:38"
+    },
+    "download_wait_seconds": 30,
+    "page_load_wait_seconds": 15,
+    "headless": true
+}

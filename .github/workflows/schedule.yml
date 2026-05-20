@@ -1,0 +1,22 @@
+name: Otomatik Script
+
+on:
+  schedule:
+    - cron: '32 10 * * 3'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      
+      - name: Bağımlılıkları Yükle
+        run: pip install -r requirements.txt
+      
+      - name: Script Çalıştır
+        run: python otomatik_veri_cekici.py
