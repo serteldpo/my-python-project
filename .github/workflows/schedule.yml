@@ -19,5 +19,11 @@ jobs:
       - name: Bağımlılıkları Yükle
         run: pip install -r requirements.txt
       
+      - name: Google Credentials Kaydet
+        run: |
+          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > client_secret_768441407763-qkcud789dmtjbf6g8ud48o47v03he2du.apps.googleusercontent.com.json
+          echo '${{ secrets.GOOGLE_TOKEN }}' > token.json
+      
       - name: Script Çalıştır
         run: python otomatik_veri_cekici.py
+
