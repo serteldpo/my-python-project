@@ -3,7 +3,7 @@ name: Otomatik Script
 on:
   workflow_dispatch:
   schedule:
-    - cron: '34 11 * * 3'
+    - cron: '00 12 * * 3'
 
 jobs:
   run:
